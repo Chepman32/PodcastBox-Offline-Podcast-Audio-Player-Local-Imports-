@@ -30,11 +30,13 @@
     "react-native-iap": "^12.15.2",
     "react-native-sound": "^0.11.2",
     "react-native-track-player": "^4.1.1",
+    "react-native-push-notification": "^8.1.1",
     "@react-native-community/hooks": "^3.0.0",
     "date-fns": "^3.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "babel-plugin-module-resolver": "^5.0.0",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@react-native/babel-preset": "0.75.4",

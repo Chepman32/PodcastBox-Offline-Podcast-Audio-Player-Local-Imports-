@@ -6,6 +6,7 @@ import {ThemeProvider, useTheme} from './theme/ThemeContext';
 import {AppNavigator} from './navigation/AppNavigator';
 import {SplashScreen} from './screens/SplashScreen';
 import {databaseService} from './services/database';
+import {useAudioPlayer} from './hooks/useAudioPlayer';
 
 // Suppress warnings for demo purposes
 LogBox.ignoreAllLogs();
@@ -14,6 +15,9 @@ const AppContent: React.FC = () => {
   const {theme} = useTheme();
   const [isReady, setIsReady] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
+
+  // Initialize audio player and sync with store
+  useAudioPlayer();
 
   useEffect(() => {
     const initialize = async () => {
